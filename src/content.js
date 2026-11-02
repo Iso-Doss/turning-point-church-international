@@ -43,6 +43,8 @@ export const CHURCH = {
   // Pour ajouter un document : déposer le PDF dans public/documents/ (et son aperçu
   // dans public/documents/apercus/), puis l'ajouter ici et son titre dans CONTENT.
   documents: [
+    { id: 'theme-mardi-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 489, file: 'documents/flyer-theme-de-la-honte-a-la-gloire-fr.pdf', preview: 'documents/apercus/flyer-theme-de-la-honte-a-la-gloire-fr.jpg' },
+    { id: 'theme-mardi-en', category: 'flyers', lang: 'en', format: 'A5', kb: 469, file: 'documents/flyer-theme-from-shame-to-fame-en.pdf', preview: 'documents/apercus/flyer-theme-from-shame-to-fame-en.jpg' },
     { id: 'lettre-fr', category: 'invitations', lang: 'fr', format: 'A4', kb: 817, file: 'documents/lettre-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/lettre-invitation-action-de-grace-2026-fr.jpg' },
     { id: 'lettre-en', category: 'invitations', lang: 'en', format: 'A4', kb: 764, file: 'documents/invitation-letter-thanksgiving-2026-en.pdf', preview: 'documents/apercus/invitation-letter-thanksgiving-2026-en.jpg' },
     { id: 'carte-fr', category: 'cartes', lang: 'fr', format: 'A5', kb: 563, file: 'documents/carte-des-invites-fr.pdf', preview: 'documents/apercus/carte-des-invites-fr.jpg' },
@@ -159,6 +161,8 @@ export const CONTENT = {
         'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Version anglaise de la lettre d’invitation d’honneur.' },
         'carte-fr': { title: 'Carte des invités', desc: 'À remettre aux nouveaux venus : coordonnées et demande de prière.' },
         'carte-en': { title: 'Guest Card', desc: 'Version anglaise de la carte des invités.' },
+        'theme-mardi-fr': { title: 'Flyer — De la honte à la gloire', desc: 'Thème du culte de mardi 3 novembre 2026, 18 h 30 (Ésaïe 61 : 7).' },
+        'theme-mardi-en': { title: 'Flyer — From Shame to Fame', desc: 'Version anglaise du flyer du thème de mardi.' },
         'flyer-fr': { title: 'Flyer — Culte du dimanche', desc: 'Invitation à remettre à un proche : « J’ai réservé une place pour vous ».' },
         'flyer-en': { title: 'Flyer — Bring-a-Friend Sunday', desc: 'Version anglaise du flyer d’invitation.' },
       },
@@ -281,6 +285,8 @@ export const CONTENT = {
         'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Private letter inviting guests of honour to the Thanksgiving service on 6th December 2026.' },
         'carte-fr': { title: 'Carte des invités', desc: 'French version of the guest card.' },
         'carte-en': { title: 'Guest Card', desc: 'For first-time visitors: contact details and prayer request.' },
+        'theme-mardi-fr': { title: 'Flyer — De la honte à la gloire', desc: 'French version of the Tuesday theme flyer.' },
+        'theme-mardi-en': { title: 'Flyer — From Shame to Fame', desc: 'Tuesday service theme, 3rd November 2026, 6:30 PM (Isaiah 61:7).' },
         'flyer-fr': { title: 'Flyer — Culte du dimanche', desc: 'French version of the invitation flyer.' },
         'flyer-en': { title: 'Flyer — Bring-a-Friend Sunday', desc: 'An invitation to hand to a friend: “I have reserved a seat for you.”' },
       },
