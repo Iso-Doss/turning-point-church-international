@@ -40,6 +40,15 @@ export const CHURCH = {
   ],
 
   // ---------- DOCUMENTS ----------
+  // Prochain culte mis en avant (Accueil + Cultes). Le bloc disparaît tout seul après `until`.
+  // Pour le suivant : changer les dates, l'image et le flyer ici, et les textes dans CONTENT.*.nextService.
+  nextService: {
+    until: '2026-11-03T21:00:00Z',
+    image: { fr: 'evenements/theme-mardi-2026-11-03-fr.jpg', en: 'evenements/theme-mardi-2026-11-03-en.jpg' },
+    flyer: { fr: 'documents/flyer-theme-de-la-honte-a-la-gloire-fr.pdf', en: 'documents/flyer-theme-from-shame-to-fame-en.pdf' },
+    calendar: 'evenements/culte-mardi-2026-11-03.ics',
+  },
+
   // Pour ajouter un document : déposer le PDF dans public/documents/ (et son aperçu
   // dans public/documents/apercus/), puis l'ajouter ici et son titre dans CONTENT.
   documents: [
@@ -149,6 +158,18 @@ export const CONTENT = {
       filterLabel: 'Filtrer par album', albums: { tous: 'TOUT', cultes: 'CULTES', evenements: 'ÉVÉNEMENTS', vie: 'VIE DE L’ÉGLISE' },
       empty: 'Photo à venir', open: 'Agrandir la photo', close: 'Fermer', prev: 'Photo précédente', next: 'Photo suivante',
       followText: 'Retrouvez plus de photos sur notre page Facebook.', followButton: 'Voir sur Facebook',
+    },
+    nextService: {
+      kicker: 'Prochain culte', label: 'Culte de mardi · Thème',
+      top: 'De la honte', bottom: 'à la gloire',
+      verse: '« Au lieu de votre opprobre, vous aurez une portion double. »', ref: 'Ésaïe 61 : 7',
+      facts: [
+        { label: 'DATE', value: 'Mardi 3 novembre 2026' },
+        { label: 'HEURE', value: '18 h 30 (GMT+1)' },
+        { label: 'LIEU', value: 'Auditorium International TPCI, Quartier Irédé, Akpakpa – Cotonou' },
+      ],
+      invite: 'Venez nombreux et invitez un ami !',
+      flyer: 'Télécharger le flyer', calendar: 'Ajouter à mon agenda', alt: 'Flyer du culte : De la honte à la gloire',
     },
     documents: {
       kicker: 'Documents', title: 'Documents à télécharger',
@@ -273,6 +294,18 @@ export const CONTENT = {
       filterLabel: 'Filter by album', albums: { tous: 'ALL', cultes: 'SERVICES', evenements: 'EVENTS', vie: 'CHURCH LIFE' },
       empty: 'Photo coming soon', open: 'Enlarge photo', close: 'Close', prev: 'Previous photo', next: 'Next photo',
       followText: 'Find more photos on our Facebook page.', followButton: 'View on Facebook',
+    },
+    nextService: {
+      kicker: 'Next service', label: 'Tuesday Service · Theme',
+      top: 'From shame', bottom: 'to fame',
+      verse: '“Instead of your shame you will receive a double portion.”', ref: 'Isaiah 61:7',
+      facts: [
+        { label: 'DATE', value: 'Tuesday, 3rd November 2026' },
+        { label: 'TIME', value: '6:30 PM (GMT+1)' },
+        { label: 'VENUE', value: 'TPCI International Auditorium, Irede Quarters, Akpakpa – Cotonou' },
+      ],
+      invite: 'Come expectant and bring a friend!',
+      flyer: 'Download the flyer', calendar: 'Add to my calendar', alt: 'Service flyer: From Shame to Fame',
     },
     documents: {
       kicker: 'Documents', title: 'Downloads',

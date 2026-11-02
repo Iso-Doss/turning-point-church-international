@@ -2,6 +2,7 @@ import { usePrefs } from '../prefs.jsx';
 import { PATHS } from '../routes.js';
 import { SocialLinks } from '../components/Footer.jsx';
 import { TypeIcon } from '../components/Icons.jsx';
+import NextService from '../components/NextService.jsx';
 
 export function MessageCard({ m, types }) {
   return (
@@ -54,6 +55,8 @@ export default function Home() {
           <p className="times-note">{h.timesNote}</p>
         </div>
       </section>
+
+      <NextService />
 
       <section className="section">
         <div className="container row">

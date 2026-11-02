@@ -4,6 +4,7 @@ import { CHURCH } from '../content.js';
 import { link } from '../components/Footer.jsx';
 import { Facebook, Instagram, Play, Tiktok, Youtube } from '../components/Icons.jsx';
 import { MessageCard } from './Home.jsx';
+import NextService from '../components/NextService.jsx';
 
 export default function Services() {
   const { t } = usePrefs();
@@ -43,6 +44,8 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      <NextService />
 
       <section className="section">
         <div className="container">

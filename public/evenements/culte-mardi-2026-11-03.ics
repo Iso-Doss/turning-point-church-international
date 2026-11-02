@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-mardi-2026-11-03@tpci-cotonou
+DTSTAMP:20261102T120000Z
+DTSTART:20261103T173000Z
+DTEND:20261103T193000Z
+SUMMARY:TPCI – De la honte à la gloire / From Shame to Fame
+DESCRIPTION:Culte de mardi – Tuesday Service. Ésaïe / Isaiah 61:7.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR
