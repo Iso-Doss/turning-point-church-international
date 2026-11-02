@@ -4,6 +4,8 @@ export const PATHS = {
   about: '#/eglise',
   locations: '#/sites',
   services: '#/cultes',
+  gallery: '#/galerie',
+  documents: '#/documents',
   contact: '#/contact',
 };
 

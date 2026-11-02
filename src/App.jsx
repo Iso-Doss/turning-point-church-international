@@ -10,8 +10,10 @@ import About from './pages/About.jsx';
 import Locations from './pages/Locations.jsx';
 import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
+import Gallery from './pages/Gallery.jsx';
+import Documents from './pages/Documents.jsx';
 
-const PAGES = { home: Home, about: About, locations: Locations, services: Services, contact: Contact };
+const PAGES = { home: Home, about: About, locations: Locations, services: Services, gallery: Gallery, documents: Documents, contact: Contact };
 
 export default function App() {
   const [route, setRoute] = useState(routeFromHash);

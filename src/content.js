@@ -22,11 +22,39 @@ export const CHURCH = {
     'Where Leaders Are Made and Nations Are Turned',
     'Restoration · Deliverance · Revival',
   ],
+
+  // ---------- GALERIE ----------
+  // Pour ajouter une photo : la déposer dans public/galerie/ puis l'ajouter ici
+  // (src: 'galerie/nom-du-fichier.jpg'). Sans « src », un cadre vide s'affiche.
+  // album : 'cultes', 'evenements' ou 'vie'.
+  gallery: [
+    { src: '', album: 'cultes', caption: { fr: '[Culte du dimanche à Cotonou]', en: '[Sunday service in Cotonou]' } },
+    { src: '', album: 'evenements', caption: { fr: '[Festival de Gratitude 2026]', en: '[Festival of Gratitude 2026]' } },
+    { src: '', album: 'vie', caption: { fr: '[Accueil des nouveaux venus]', en: '[Welcoming newcomers]' } },
+    { src: '', album: 'cultes', caption: { fr: '[Louange et adoration]', en: '[Praise and worship]' } },
+    { src: '', album: 'cultes', caption: { fr: '[Culte du dimanche à Lomé]', en: '[Sunday service in Lomé]' } },
+    { src: '', album: 'evenements', caption: { fr: '[Événement spécial]', en: '[Special event]' } },
+    { src: '', album: 'vie', caption: { fr: '[Moment de communion fraternelle]', en: '[Fellowship moment]' } },
+    { src: '', album: 'cultes', caption: { fr: '[Culte de semaine]', en: '[Midweek service]' } },
+    { src: '', album: 'vie', caption: { fr: '[Vie de l’église]', en: '[Church life]' } },
+  ],
+
+  // ---------- DOCUMENTS ----------
+  // Pour ajouter un document : déposer le PDF dans public/documents/ (et son aperçu
+  // dans public/documents/apercus/), puis l'ajouter ici et son titre dans CONTENT.
+  documents: [
+    { id: 'lettre-fr', category: 'invitations', lang: 'fr', format: 'A4', kb: 817, file: 'documents/lettre-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/lettre-invitation-action-de-grace-2026-fr.jpg' },
+    { id: 'lettre-en', category: 'invitations', lang: 'en', format: 'A4', kb: 764, file: 'documents/invitation-letter-thanksgiving-2026-en.pdf', preview: 'documents/apercus/invitation-letter-thanksgiving-2026-en.jpg' },
+    { id: 'carte-fr', category: 'cartes', lang: 'fr', format: 'A5', kb: 563, file: 'documents/carte-des-invites-fr.pdf', preview: 'documents/apercus/carte-des-invites-fr.jpg' },
+    { id: 'carte-en', category: 'cartes', lang: 'en', format: 'A5', kb: 558, file: 'documents/guest-card-en.pdf', preview: 'documents/apercus/guest-card-en.jpg' },
+    { id: 'flyer-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 624, file: 'documents/flyer-culte-du-dimanche-fr.pdf', preview: 'documents/apercus/flyer-culte-du-dimanche-fr.jpg' },
+    { id: 'flyer-en', category: 'flyers', lang: 'en', format: 'A5', kb: 634, file: 'documents/flyer-bring-a-friend-sunday-en.pdf', preview: 'documents/apercus/flyer-bring-a-friend-sunday-en.jpg' },
+  ],
 };
 
 export const CONTENT = {
   fr: {
-    nav: { home: 'Accueil', about: 'L’Église', locations: 'Nos sites', services: 'Cultes', contact: 'Contact' },
+    nav: { home: 'Accueil', about: 'L’Église', locations: 'Nos sites', services: 'Cultes', gallery: 'Galerie', documents: 'Documents', contact: 'Contact' },
     ui: {
       navLabel: 'Navigation principale', langLabel: 'Langue', themeToDark: 'Passer en mode sombre', themeToLight: 'Passer en mode clair',
       menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu', visit: 'Nous rendre visite', toTop: 'Retour en haut de la page',
@@ -113,6 +141,28 @@ export const CONTENT = {
       followKicker: 'Où nous suivre', followTitle: 'Nos pages',
       follow: { youtube: 'Cultes complets et prédications', facebook: 'Directs du dimanche et annonces', instagram: 'Photos, versets et événements', tiktok: 'Extraits courts des messages' },
     },
+    gallery: {
+      kicker: 'Galerie', title: 'La vie de l’église en images',
+      intro: 'Cultes, événements et moments de communion à Cotonou et à Lomé.',
+      filterLabel: 'Filtrer par album', albums: { tous: 'TOUT', cultes: 'CULTES', evenements: 'ÉVÉNEMENTS', vie: 'VIE DE L’ÉGLISE' },
+      empty: 'Photo à venir', open: 'Agrandir la photo', close: 'Fermer', prev: 'Photo précédente', next: 'Photo suivante',
+      followText: 'Retrouvez plus de photos sur notre page Facebook.', followButton: 'Voir sur Facebook',
+    },
+    documents: {
+      kicker: 'Documents', title: 'Documents à télécharger',
+      intro: 'Lettres d’invitation, cartes et flyers de l’église, en français et en anglais, prêts à imprimer.',
+      filterLabel: 'Filtrer par type', categories: { tous: 'TOUT', invitations: 'INVITATIONS', cartes: 'CARTES', flyers: 'FLYERS' },
+      download: 'Télécharger', view: 'Ouvrir', langs: { fr: 'Français', en: 'Anglais' }, sizeUnit: 'Ko',
+      printTip: 'Conseil d’impression : format réel (100 %), papier ivoire ou blanc de 120 g ou plus.',
+      items: {
+        'lettre-fr': { title: 'Lettre d’invitation — Festival de Gratitude 2026', desc: 'Lettre privée d’invitation d’honneur au culte d’action de grâce du 6 décembre 2026.' },
+        'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Version anglaise de la lettre d’invitation d’honneur.' },
+        'carte-fr': { title: 'Carte des invités', desc: 'À remettre aux nouveaux venus : coordonnées et demande de prière.' },
+        'carte-en': { title: 'Guest Card', desc: 'Version anglaise de la carte des invités.' },
+        'flyer-fr': { title: 'Flyer — Culte du dimanche', desc: 'Invitation à remettre à un proche : « J’ai réservé une place pour vous ».' },
+        'flyer-en': { title: 'Flyer — Bring-a-Friend Sunday', desc: 'Version anglaise du flyer d’invitation.' },
+      },
+    },
     contact: {
       title: 'Nous sommes heureux de vous accueillir', intro: 'Une question, une demande de prière ou une première visite ? Écrivez-nous.',
       formKicker: 'Carte des invités', formTitle: 'Vous êtes spécial(e) pour nous',
@@ -126,7 +176,7 @@ export const CONTENT = {
   },
 
   en: {
-    nav: { home: 'Home', about: 'About', locations: 'Locations', services: 'Services', contact: 'Contact' },
+    nav: { home: 'Home', about: 'About', locations: 'Locations', services: 'Services', gallery: 'Gallery', documents: 'Documents', contact: 'Contact' },
     ui: {
       navLabel: 'Main navigation', langLabel: 'Language', themeToDark: 'Switch to dark mode', themeToLight: 'Switch to light mode',
       menuOpen: 'Open the menu', menuClose: 'Close the menu', visit: 'Plan a visit', toTop: 'Back to top',
@@ -212,6 +262,28 @@ export const CONTENT = {
       filters: { tous: 'ALL', video: 'VIDEO', audio: 'AUDIO', ecrit: 'WRITTEN' },
       followKicker: 'Where to follow us', followTitle: 'Our pages',
       follow: { youtube: 'Full services and sermons', facebook: 'Sunday live streams and announcements', instagram: 'Photos, verses and events', tiktok: 'Short sermon clips' },
+    },
+    gallery: {
+      kicker: 'Gallery', title: 'Church life in pictures',
+      intro: 'Services, events and fellowship moments in Cotonou and Lomé.',
+      filterLabel: 'Filter by album', albums: { tous: 'ALL', cultes: 'SERVICES', evenements: 'EVENTS', vie: 'CHURCH LIFE' },
+      empty: 'Photo coming soon', open: 'Enlarge photo', close: 'Close', prev: 'Previous photo', next: 'Next photo',
+      followText: 'Find more photos on our Facebook page.', followButton: 'View on Facebook',
+    },
+    documents: {
+      kicker: 'Documents', title: 'Downloads',
+      intro: 'Church invitation letters, cards and flyers, in French and English, ready to print.',
+      filterLabel: 'Filter by type', categories: { tous: 'ALL', invitations: 'INVITATIONS', cartes: 'CARDS', flyers: 'FLYERS' },
+      download: 'Download', view: 'Open', langs: { fr: 'French', en: 'English' }, sizeUnit: 'KB',
+      printTip: 'Printing tip: actual size (100%), ivory or white paper, 120 gsm or heavier.',
+      items: {
+        'lettre-fr': { title: 'Lettre d’invitation — Festival de Gratitude 2026', desc: 'French version of the invitation letter.' },
+        'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Private letter inviting guests of honour to the Thanksgiving service on 6th December 2026.' },
+        'carte-fr': { title: 'Carte des invités', desc: 'French version of the guest card.' },
+        'carte-en': { title: 'Guest Card', desc: 'For first-time visitors: contact details and prayer request.' },
+        'flyer-fr': { title: 'Flyer — Culte du dimanche', desc: 'French version of the invitation flyer.' },
+        'flyer-en': { title: 'Flyer — Bring-a-Friend Sunday', desc: 'An invitation to hand to a friend: “I have reserved a seat for you.”' },
+      },
     },
     contact: {
       title: 'We are glad to welcome you', intro: 'A question, a prayer request or your first visit? Write to us.',

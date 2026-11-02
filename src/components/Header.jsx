@@ -3,7 +3,7 @@ import { usePrefs } from '../prefs.jsx';
 import { PATHS } from '../routes.js';
 import { Burger, Close, Moon, Sun } from './Icons.jsx';
 
-const ORDER = ['home', 'about', 'locations', 'services', 'contact'];
+const ORDER = ['home', 'about', 'locations', 'services', 'gallery', 'documents', 'contact'];
 
 function LangSwitch() {
   const { lang, setLang, t } = usePrefs();
@@ -34,7 +34,7 @@ export default function Header({ route }) {
         <a className="brand" href="#/">
           <img src="./logo-tpci.png" alt="Logo Turning Point Church International" />
           <span>
-            <span className="brand-name" style={{ display: 'block' }}>TURNING POINT CHURCH INTERNATIONAL</span>
+            <span className="brand-name" style={{ display: 'block' }}>TURNING POINT CHURCH<br />INTERNATIONAL</span>
             <span className="brand-city">COTONOU · LOMÉ</span>
           </span>
         </a>

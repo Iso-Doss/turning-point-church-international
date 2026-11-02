@@ -13,7 +13,19 @@ Tous les textes sont dans **`src/content.js`** :
 Les éléments entre `[crochets]` sont à compléter.
 Pour ajouter un message (vidéo, audio ou écrit), ajoutez une ligne dans `messages`, en français **et** en anglais.
 
-Le logo est dans `public/logo-tpci.png`. Les photos pourront aussi aller dans `public/`.
+Le logo est dans `public/logo-tpci.png`.
+
+### Ajouter des photos à la Galerie
+
+1. Déposer la photo dans `public/galerie/` (format JPG, idéalement 1600 px de large maximum).
+2. Dans `src/content.js`, liste `gallery` : renseigner `src: 'galerie/nom-de-la-photo.jpg'`,
+   l'album (`cultes`, `evenements` ou `vie`) et la légende en français et en anglais.
+
+### Ajouter un document (PDF)
+
+1. Déposer le PDF dans `public/documents/` et une image d'aperçu dans `public/documents/apercus/`.
+2. Dans `src/content.js`, liste `documents` : ajouter une ligne (fichier, aperçu, langue, format, taille en Ko),
+   puis son titre et sa description dans `CONTENT.fr.documents.items` et `CONTENT.en.documents.items`.
 
 ## Voir le site sur son ordinateur
 
