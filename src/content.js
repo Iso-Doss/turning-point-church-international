@@ -1,0 +1,223 @@
+// ============================================================
+//  TOUS LES TEXTES DU SITE — à modifier ici.
+//  Les éléments entre [crochets] sont à compléter.
+// ============================================================
+
+// Coordonnées communes aux deux langues
+export const CHURCH = {
+  phones: ['01 61 04 09 09', '+229 68 31 21 79', '+229 97 57 71 02', '+229 97 68 84 06'],
+  email: 'turningpointcotonou@gmail.com',
+  lomePhone: '[+228 …]',
+  links: {
+    facebook: 'https://www.facebook.com/turningpointcotonou',
+    facebookLome: 'https://www.facebook.com/Eglise-Internationale-Point-De-Tournure-Lom%C3%A9-Togo-309349249773774/',
+    youtube: '', // [lien de la chaîne YouTube]
+    instagram: '', // [lien Instagram]
+    tiktok: '', // [lien TikTok]
+    mapsCotonou: '', // [lien Google Maps de l'auditorium]
+    mapsLome: '', // [lien Google Maps du site de Lomé]
+  },
+  mottos: [
+    'A Church Where Lives Are Transformed',
+    'Where Leaders Are Made and Nations Are Turned',
+    'Restoration · Deliverance · Revival',
+  ],
+};
+
+export const CONTENT = {
+  fr: {
+    nav: { home: 'Accueil', about: 'L’Église', locations: 'Nos sites', services: 'Cultes', contact: 'Contact' },
+    ui: {
+      navLabel: 'Navigation principale', langLabel: 'Langue', themeToDark: 'Passer en mode sombre', themeToLight: 'Passer en mode clair',
+      menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu', visit: 'Nous rendre visite', toTop: 'Retour en haut de la page',
+      footerNav: 'Navigation', copyright: '© 2026 Turning Point Church International · Cotonou · Lomé', lomePhone: '[Téléphone du site de Lomé]',
+    },
+    home: {
+      kicker: 'Cathédrale du Leadership et de la Transformation',
+      title: 'Une Église où les vies sont transformées',
+      text: 'Une famille bilingue, francophone et anglophone, réunie à Cotonou et à Lomé autour de la Parole de Dieu.',
+      cta1: 'Horaires des cultes', cta2: 'Dernier message', photo: '[Photo : l’assemblée en louange]',
+      times: [
+        { label: 'CULTE DU DIMANCHE · COTONOU', value: 'Dimanche · 8 h 00' },
+        { label: 'CULTE DU DIMANCHE · LOMÉ', value: 'Dimanche · [HEURE]' },
+        { label: 'CULTES DE SEMAINE · COTONOU', value: 'Mardi & jeudi · 18 h 30' },
+      ],
+      welcomeKicker: 'Bienvenue',
+      welcomeTitle: 'Vous êtes précieux, vous êtes aimé, vous comptez.',
+      welcomeText: 'Turning Point Church International est une église évangélique implantée à Cotonou (Bénin) et à Lomé (Togo). Nos cultes réunissent francophones et anglophones dans une même famille.',
+      welcomePh: '[Deux ou trois phrases sur l’histoire de l’église, sa vision et ce qu’un visiteur va vivre lors de sa première visite.]',
+      welcomeLink: 'Découvrir l’Église →',
+      eventKicker: 'Prochain grand rendez-vous', eventTitle: 'Festival de Gratitude', eventSub: 'Là où la Gratitude devient Gouvernance',
+      eventFacts: [
+        { label: 'DATE', value: 'Dimanche 6 décembre 2026' },
+        { label: 'HEURE', value: '8 h 00' },
+        { label: 'LIEU', value: 'Auditorium International TPCI, Cotonou' },
+      ],
+      eventCta: 'En savoir plus',
+      sitesKicker: 'Nos sites', sitesTitle: 'Deux villes, une même famille', sitesLink: 'Itinéraire & horaires →',
+      sites: [
+        { photo: '[Photo : auditorium de Cotonou]', country: 'BÉNIN', city: 'Cotonou', addr: 'Auditorium International TPCI — à 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie. Repère : pharmacie Ciné Concorde.', time: 'Dimanche · 8 h 00' },
+        { photo: '[Photo : site de Lomé]', country: 'TOGO', city: 'Lomé', addr: '[Adresse du site de Lomé et repère pour le trouver.]', time: 'Dimanche · [HEURE]' },
+      ],
+      pastorsKicker: 'Nos pasteurs', pastorsTitle: 'Pasteur Silas Okechukwu & [Nom de son épouse]', pastorsRole: 'Pasteur Principal & Convocateur',
+      pastorsText: '[Quelques lignes de présentation du couple pastoral : leur appel, leur ministère et leur cœur pour Cotonou et Lomé.]',
+      pastorsPhoto: '[Photo : le pasteur et son épouse]', pastorsLink: 'Lire leur histoire →',
+      msgKicker: 'Cultes & messages', msgTitle: 'Derniers messages', msgAll: 'Tous les messages →',
+      socialKicker: 'Suivez-nous', socialTitle: 'Les cultes en direct, chaque dimanche',
+    },
+    types: { video: ['VIDÉO', 'Regarder →'], audio: ['AUDIO', 'Écouter →'], ecrit: ['ÉCRIT', 'Lire le résumé →'] },
+    messages: [
+      { type: 'video', title: 'Festival de Gratitude — Culte d’action de grâce', meta: 'Dimanche 6 décembre 2026 · En direct' },
+      { type: 'audio', title: '[Titre du message]', meta: '[Date] · Pasteur Silas Okechukwu' },
+      { type: 'ecrit', title: '[Titre du message]', meta: '[Date] · Pasteur Silas Okechukwu' },
+      { type: 'video', title: '[Titre du message]', meta: '[Date] · Pasteur Silas Okechukwu' },
+      { type: 'ecrit', title: '[Titre du message]', meta: '[Date] · [Orateur invité]' },
+      { type: 'audio', title: '[Titre du message]', meta: '[Date] · Pasteur Silas Okechukwu' },
+    ],
+    about: {
+      kicker: 'L’Église', title: 'Qui sommes-nous', subtitle: 'Cathédrale du Leadership et de la Transformation',
+      storyKicker: 'Notre histoire', storyTitle: 'Une famille, deux nations',
+      storyText: 'Turning Point Church International est une église évangélique présente à Cotonou, au Bénin, et à Lomé, au Togo. Chaque dimanche, francophones et anglophones y célèbrent ensemble.',
+      storyPh: '[Date et circonstances de la fondation, étapes marquantes, ouverture du site de Lomé.]',
+      storyPhoto: '[Photo : un culte à l’auditorium]',
+      vision: ['Notre vision', '[La vision de l’église en une ou deux phrases.]'],
+      mission: ['Notre mission', '[La mission de l’église en une ou deux phrases.]'],
+      mottos: 'Nos devises',
+      pastorsKicker: 'Nos pasteurs', pastorsTitle: 'Le couple pastoral',
+      pastors: [
+        { photo: '[Portrait : Pasteur Silas Okechukwu]', name: 'Pasteur Silas Okechukwu', role: 'Pasteur Principal & Convocateur', bio: '[Biographie : appel, parcours, ministère, famille. Cinq à six lignes.]' },
+        { photo: '[Portrait : son épouse]', name: '[Nom de l’épouse du pasteur]', role: '[Son rôle dans l’église]', bio: '[Biographie : appel, parcours, ministère. Cinq à six lignes.]' },
+      ],
+      ctaTitle: 'Première visite ?', ctaText: 'Vous êtes spécial(e) pour nous. Laissez-nous vos coordonnées et nous serons heureux de vous accueillir.', ctaButton: 'Remplir la carte des invités',
+    },
+    locations: {
+      kicker: 'Nos sites', title: 'Venez nous rendre visite',
+      intro: 'Cotonou et Lomé : deux sites, une même famille. Les cultes se tiennent en français et en anglais.',
+      maps: 'Ouvrir dans Google Maps', mapPh: '[Carte Google Maps intégrée]',
+      labels: { address: 'ADRESSE', services: 'CULTES', pastor: 'PASTEUR', phone: 'TÉLÉPHONE', email: 'EMAIL', facebook: 'FACEBOOK' },
+      cotonou: { id: 'cotonou', country: 'BÉNIN', city: 'Cotonou', venue: 'Auditorium International TPCI', photo: '[Photo : façade de l’auditorium]',
+        address: 'À 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie', landmark: 'Repère : pharmacie Ciné Concorde',
+        sunday: 'Dimanche · 8 h 00', midweek: 'Mardi et jeudi · 18 h 30', pastor: 'Pasteur Silas Okechukwu', facebookText: 'facebook.com/turningpointcotonou' },
+      lome: { id: 'lome', country: 'TOGO', city: 'Lomé', venue: '[Nom du lieu de culte]', photo: '[Photo : site de Lomé]',
+        address: '[Quartier, rue et repère]', landmark: '', sunday: 'Dimanche · [HEURE]', midweek: '[Culte de semaine : jour et heure]',
+        pastor: '[Nom du pasteur du site]', facebookText: 'Page Facebook du site de Lomé' },
+      liveTitle: 'Vous ne pouvez pas venir ?', liveText: 'Suivez le culte en direct sur nos pages, chaque dimanche.', liveButton: 'Voir les cultes',
+    },
+    services: {
+      kicker: 'Cultes & messages', title: 'Revivez la Parole', player: '[Lecteur YouTube : dernier culte]',
+      lastLabel: 'Dernier culte', lastTitle: '[Titre du message]', lastMeta: '[Date] · Pasteur Silas Okechukwu', lastSummary: '[Résumé en deux phrases du message.]',
+      libKicker: 'Bibliothèque', libTitle: 'Tous les messages', filterLabel: 'Filtrer par format', more: 'Voir plus de messages',
+      filters: { tous: 'TOUS', video: 'VIDÉO', audio: 'AUDIO', ecrit: 'ÉCRIT' },
+      followKicker: 'Où nous suivre', followTitle: 'Nos pages',
+      follow: { youtube: 'Cultes complets et prédications', facebook: 'Directs du dimanche et annonces', instagram: 'Photos, versets et événements', tiktok: 'Extraits courts des messages' },
+    },
+    contact: {
+      title: 'Nous sommes heureux de vous accueillir', intro: 'Une question, une demande de prière ou une première visite ? Écrivez-nous.',
+      formKicker: 'Carte des invités', formTitle: 'Vous êtes spécial(e) pour nous',
+      name: 'NOM', phone: 'TÉLÉPHONE', email: 'EMAIL', site: 'SITE', address: 'ADRESSE', prayer: 'DEMANDE DE PRIÈRE', optional: '(facultative)', send: 'Envoyer',
+      sent: 'Merci ! Votre message va s’ouvrir dans votre application email.',
+      cotonouAddr: 'À 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie', landmark: 'Repère : pharmacie Ciné Concorde',
+      lomeAddr: '[Adresse du site de Lomé]', lomeFb: 'Page Facebook du site de Lomé', social: 'RÉSEAUX SOCIAUX',
+      values: 'VOUS ÊTES PRÉCIEUX ◆ VOUS ÊTES AIMÉ ◆ VOUS COMPTEZ',
+      mailSubject: 'Carte des invités — site web',
+    },
+  },
+
+  en: {
+    nav: { home: 'Home', about: 'About', locations: 'Locations', services: 'Services', contact: 'Contact' },
+    ui: {
+      navLabel: 'Main navigation', langLabel: 'Language', themeToDark: 'Switch to dark mode', themeToLight: 'Switch to light mode',
+      menuOpen: 'Open the menu', menuClose: 'Close the menu', visit: 'Plan a visit', toTop: 'Back to top',
+      footerNav: 'Navigation', copyright: '© 2026 Turning Point Church International · Cotonou · Lomé', lomePhone: '[Lomé phone number]',
+    },
+    home: {
+      kicker: 'Cathedral of Leadership and Transformation',
+      title: 'A Church Where Lives Are Transformed',
+      text: 'A bilingual family, French- and English-speaking, gathered in Cotonou and Lomé around the Word of God.',
+      cta1: 'Service times', cta2: 'Latest sermon', photo: '[Photo: the congregation in worship]',
+      times: [
+        { label: 'SUNDAY SERVICE · COTONOU', value: 'Sunday · 8:00 AM' },
+        { label: 'SUNDAY SERVICE · LOMÉ', value: 'Sunday · [TIME]' },
+        { label: 'MIDWEEK SERVICES · COTONOU', value: 'Tuesday & Thursday · 6:30 PM' },
+      ],
+      welcomeKicker: 'Welcome',
+      welcomeTitle: 'You are valued, you are loved, you matter.',
+      welcomeText: 'Turning Point Church International is an evangelical church in Cotonou (Benin) and Lomé (Togo). Our services bring French and English speakers together as one family.',
+      welcomePh: '[Two or three sentences about the church’s story, its vision and what a first-time visitor can expect.]',
+      welcomeLink: 'About the church →',
+      eventKicker: 'Upcoming event', eventTitle: 'Festival of Gratitude', eventSub: 'Where Gratitude Becomes Governance',
+      eventFacts: [
+        { label: 'DATE', value: 'Sunday, 6th December 2026' },
+        { label: 'TIME', value: '8:00 AM' },
+        { label: 'VENUE', value: 'TPCI International Auditorium, Cotonou' },
+      ],
+      eventCta: 'Learn more',
+      sitesKicker: 'Our locations', sitesTitle: 'Two cities, one family', sitesLink: 'Directions & times →',
+      sites: [
+        { photo: '[Photo: Cotonou auditorium]', country: 'BENIN', city: 'Cotonou', addr: 'TPCI International Auditorium — 300m from Ciné Concorde towards Tanto, on the New Road. Landmark: Ciné Concorde pharmacy.', time: 'Sunday · 8:00 AM' },
+        { photo: '[Photo: Lomé location]', country: 'TOGO', city: 'Lomé', addr: '[Address of the Lomé location and a landmark to find it.]', time: 'Sunday · [TIME]' },
+      ],
+      pastorsKicker: 'Our pastors', pastorsTitle: 'Pastor Silas Okechukwu & [His wife’s name]', pastorsRole: 'Lead Pastor & Convener',
+      pastorsText: '[A few lines introducing the pastoral couple: their calling, their ministry and their heart for Cotonou and Lomé.]',
+      pastorsPhoto: '[Photo: the pastor and his wife]', pastorsLink: 'Read their story →',
+      msgKicker: 'Services & sermons', msgTitle: 'Latest sermons', msgAll: 'All sermons →',
+      socialKicker: 'Follow us', socialTitle: 'Services streamed live every Sunday',
+    },
+    types: { video: ['VIDEO', 'Watch →'], audio: ['AUDIO', 'Listen →'], ecrit: ['WRITTEN', 'Read the summary →'] },
+    messages: [
+      { type: 'video', title: 'Festival of Gratitude — Thanksgiving Service', meta: 'Sunday, 6th December 2026 · Live' },
+      { type: 'audio', title: '[Sermon title]', meta: '[Date] · Pastor Silas Okechukwu' },
+      { type: 'ecrit', title: '[Sermon title]', meta: '[Date] · Pastor Silas Okechukwu' },
+      { type: 'video', title: '[Sermon title]', meta: '[Date] · Pastor Silas Okechukwu' },
+      { type: 'ecrit', title: '[Sermon title]', meta: '[Date] · [Guest speaker]' },
+      { type: 'audio', title: '[Sermon title]', meta: '[Date] · Pastor Silas Okechukwu' },
+    ],
+    about: {
+      kicker: 'About us', title: 'Who we are', subtitle: 'Cathedral of Leadership and Transformation',
+      storyKicker: 'Our story', storyTitle: 'One family, two nations',
+      storyText: 'Turning Point Church International is an evangelical church in Cotonou, Benin, and Lomé, Togo. Every Sunday, French and English speakers worship together.',
+      storyPh: '[Founding date and story, key milestones, opening of the Lomé location.]',
+      storyPhoto: '[Photo: a service in the auditorium]',
+      vision: ['Our vision', '[The church’s vision in one or two sentences.]'],
+      mission: ['Our mission', '[The church’s mission in one or two sentences.]'],
+      mottos: 'Our mottos',
+      pastorsKicker: 'Our pastors', pastorsTitle: 'The pastoral couple',
+      pastors: [
+        { photo: '[Portrait: Pastor Silas Okechukwu]', name: 'Pastor Silas Okechukwu', role: 'Lead Pastor & Convener', bio: '[Biography: calling, background, ministry, family. Five to six lines.]' },
+        { photo: '[Portrait: his wife]', name: '[Name of the pastor’s wife]', role: '[Her role in the church]', bio: '[Biography: calling, background, ministry. Five to six lines.]' },
+      ],
+      ctaTitle: 'First time visiting?', ctaText: 'You are special to us. Leave us your details and we will be glad to welcome you.', ctaButton: 'Fill in the guest card',
+    },
+    locations: {
+      kicker: 'Our locations', title: 'Come and visit us',
+      intro: 'Cotonou and Lomé: two locations, one family. Services are held in French and English.',
+      maps: 'Open in Google Maps', mapPh: '[Embedded Google Map]',
+      labels: { address: 'ADDRESS', services: 'SERVICES', pastor: 'PASTOR', phone: 'PHONE', email: 'EMAIL', facebook: 'FACEBOOK' },
+      cotonou: { id: 'cotonou', country: 'BENIN', city: 'Cotonou', venue: 'TPCI International Auditorium', photo: '[Photo: auditorium front]',
+        address: '300m from Ciné Concorde towards Tanto, on the New Road', landmark: 'Landmark: Ciné Concorde pharmacy',
+        sunday: 'Sunday · 8:00 AM', midweek: 'Tuesday and Thursday · 6:30 PM', pastor: 'Pastor Silas Okechukwu', facebookText: 'facebook.com/turningpointcotonou' },
+      lome: { id: 'lome', country: 'TOGO', city: 'Lomé', venue: '[Name of the venue]', photo: '[Photo: Lomé location]',
+        address: '[Area, street and landmark]', landmark: '', sunday: 'Sunday · [TIME]', midweek: '[Midweek service: day and time]',
+        pastor: '[Name of the location pastor]', facebookText: 'Lomé location Facebook page' },
+      liveTitle: 'Can’t make it in person?', liveText: 'Join the service live on our pages every Sunday.', liveButton: 'Watch services',
+    },
+    services: {
+      kicker: 'Services & sermons', title: 'Experience the Word again', player: '[YouTube player: latest service]',
+      lastLabel: 'Latest service', lastTitle: '[Sermon title]', lastMeta: '[Date] · Pastor Silas Okechukwu', lastSummary: '[Two-sentence summary of the sermon.]',
+      libKicker: 'Library', libTitle: 'All sermons', filterLabel: 'Filter by format', more: 'Load more sermons',
+      filters: { tous: 'ALL', video: 'VIDEO', audio: 'AUDIO', ecrit: 'WRITTEN' },
+      followKicker: 'Where to follow us', followTitle: 'Our pages',
+      follow: { youtube: 'Full services and sermons', facebook: 'Sunday live streams and announcements', instagram: 'Photos, verses and events', tiktok: 'Short sermon clips' },
+    },
+    contact: {
+      title: 'We are glad to welcome you', intro: 'A question, a prayer request or your first visit? Write to us.',
+      formKicker: 'Guest card', formTitle: 'You are special to us',
+      name: 'NAME', phone: 'PHONE', email: 'EMAIL', site: 'LOCATION', address: 'ADDRESS', prayer: 'PRAYER REQUEST', optional: '(optional)', send: 'Send',
+      sent: 'Thank you! Your message will open in your email app.',
+      cotonouAddr: '300m from Ciné Concorde towards Tanto, on the New Road', landmark: 'Landmark: Ciné Concorde pharmacy',
+      lomeAddr: '[Lomé location address]', lomeFb: 'Lomé location Facebook page', social: 'SOCIAL MEDIA',
+      values: 'YOU ARE VALUED ◆ YOU ARE LOVED ◆ YOU MATTER',
+      mailSubject: 'Guest card — website',
+    },
+  },
+};
