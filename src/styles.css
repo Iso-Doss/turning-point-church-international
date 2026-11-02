@@ -179,6 +179,7 @@ h1, h2, h3, p { margin: 0; }
 .form { display: flex; flex-direction: column; gap: 20px; }
 .form .pair { display: flex; flex-wrap: wrap; gap: 20px 28px; }
 .form label { flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px; }
+.form > label { flex: none; } /* champs pleine largeur : pas de hauteur imposée */
 .form .lbl { font-family: var(--display); font-size: 12px; letter-spacing: .2em; color: var(--gt); }
 .form input, .form select { font: inherit; font-size: 18px; padding: 12px 0; border: 0; border-bottom: 1px solid var(--gl); background: transparent; color: var(--ink); min-height: 44px; border-radius: 0; }
 .form select { background: var(--bg); }
@@ -316,6 +317,15 @@ html[data-theme="dark"] .card:hover { box-shadow: 0 18px 40px rgba(0,0,0,.5); }
 .form input, .form select, .form textarea { -webkit-tap-highlight-color: transparent; }
 .form .lbl { transition: color .25s ease; }
 .form label:focus-within .lbl { color: var(--acc); }
+/* Intitulés : curseur « main » et couleur au survol (cliquer l'intitulé place le curseur dans le champ) */
+.form label { cursor: pointer; }
+.form label:hover .lbl { color: var(--acc); }
+.form input, .form textarea { cursor: text; }
+.form select { cursor: pointer; }
+.form .req { color: var(--acc); font-weight: 600; }
+.form .lbl-note { font-family: var(--serif); font-style: italic; letter-spacing: 0; font-size: 15px; color: var(--mut); text-transform: none; }
+.required-note { font-size: 15px; font-style: italic; color: var(--mut); margin-top: -6px; }
+.required-note .req { color: var(--acc); font-style: normal; font-weight: 600; }
 
 /* Retour en haut : petit rebond au survol */
 .to-top:hover { transform: translateY(-3px); }

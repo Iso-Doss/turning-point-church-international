@@ -116,7 +116,7 @@ export const CONTENT = {
     contact: {
       title: 'Nous sommes heureux de vous accueillir', intro: 'Une question, une demande de prière ou une première visite ? Écrivez-nous.',
       formKicker: 'Carte des invités', formTitle: 'Vous êtes spécial(e) pour nous',
-      name: 'NOM', phone: 'TÉLÉPHONE', email: 'EMAIL', site: 'SITE', address: 'ADRESSE', prayer: 'DEMANDE DE PRIÈRE', optional: '(facultative)', send: 'Envoyer',
+      name: 'NOM', phone: 'TÉLÉPHONE', email: 'EMAIL', site: 'SITE', address: 'ADRESSE', prayer: 'DEMANDE DE PRIÈRE', optional: '(facultative)', send: 'Envoyer', requiredNote: 'Champs obligatoires',
       sent: 'Merci ! Votre message va s’ouvrir dans votre application email.',
       cotonouAddr: 'Quartier Irédé, Akpakpa – Cotonou', landmark: 'À 300 m de la pharmacie Ciné Concorde, sur la nouvelle voie de Tanto',
       lomeAddr: '[Adresse du site de Lomé]', lomeFb: 'Page Facebook du site de Lomé', social: 'RÉSEAUX SOCIAUX',
@@ -216,7 +216,7 @@ export const CONTENT = {
     contact: {
       title: 'We are glad to welcome you', intro: 'A question, a prayer request or your first visit? Write to us.',
       formKicker: 'Guest card', formTitle: 'You are special to us',
-      name: 'NAME', phone: 'PHONE', email: 'EMAIL', site: 'LOCATION', address: 'ADDRESS', prayer: 'PRAYER REQUEST', optional: '(optional)', send: 'Send',
+      name: 'NAME', phone: 'PHONE', email: 'EMAIL', site: 'LOCATION', address: 'ADDRESS', prayer: 'PRAYER REQUEST', optional: '(optional)', send: 'Send', requiredNote: 'Required fields',
       sent: 'Thank you! Your message will open in your email app.',
       cotonouAddr: 'Irede Quarters, Akpakpa – Cotonou', landmark: '300 m from Pharmacy Ciné Concorde, on the new road to Tanto',
       lomeAddr: '[Lomé location address]', lomeFb: 'Lomé location Facebook page', social: 'SOCIAL MEDIA',

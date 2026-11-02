@@ -3,6 +3,21 @@ import { usePrefs } from '../prefs.jsx';
 import { CHURCH } from '../content.js';
 import { SocialLinks } from '../components/Footer.jsx';
 
+// Intitulé de champ : astérisque devant si obligatoire, deux-points à la fin
+// (avec espace insécable avant les deux-points en français).
+function Lbl({ text, required = false, note }) {
+  const { lang } = usePrefs();
+  const colon = lang === 'fr' ? ' :' : ':';
+  return (
+    <span className="lbl">
+      {required && <span className="req" aria-hidden="true">*&nbsp;</span>}
+      {text}
+      {note && <span className="lbl-note"> {note}</span>}
+      {colon}
+    </span>
+  );
+}
+
 // Le formulaire ouvre l'application email du visiteur avec un message prérempli
 // (aucun serveur nécessaire : compatible GitHub Pages).
 export default function Contact() {
@@ -44,20 +59,21 @@ export default function Contact() {
               <p className="kicker">{c.formKicker}</p>
               <h2 className="title" style={{ marginTop: 10, fontSize: 'clamp(26px, 2.6vw, 32px)' }}>{c.formTitle}</h2>
             </div>
+            <p className="required-note"><span className="req" aria-hidden="true">*</span> {c.requiredNote}</p>
             <div className="pair">
-              <label><span className="lbl">{c.name}</span><input name="name" type="text" autoComplete="name" required /></label>
-              <label><span className="lbl">{c.phone}</span><input name="phone" type="tel" autoComplete="tel" /></label>
+              <label><Lbl text={c.name} required /><input name="name" type="text" autoComplete="name" required aria-required="true" /></label>
+              <label><Lbl text={c.phone} required /><input name="phone" type="tel" autoComplete="tel" required aria-required="true" /></label>
             </div>
             <div className="pair">
-              <label><span className="lbl">{c.email}</span><input name="email" type="email" autoComplete="email" /></label>
+              <label><Lbl text={c.email} /><input name="email" type="email" autoComplete="email" /></label>
               <label>
-                <span className="lbl">{c.site}</span>
+                <Lbl text={c.site} />
                 <select name="site" defaultValue="Cotonou"><option>Cotonou</option><option>Lomé</option></select>
               </label>
             </div>
-            <label><span className="lbl">{c.address}</span><input name="address" type="text" autoComplete="street-address" /></label>
+            <label><Lbl text={c.address} /><input name="address" type="text" autoComplete="street-address" /></label>
             <label>
-              <span className="lbl">{c.prayer} <span className="italic muted" style={{ fontFamily: 'var(--serif)', letterSpacing: 0, fontSize: 15 }}>{c.optional}</span></span>
+              <Lbl text={c.prayer} note={c.optional} />
               <textarea name="prayer" rows={5} />
             </label>
             <div>
