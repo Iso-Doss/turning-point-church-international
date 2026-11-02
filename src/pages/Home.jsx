@@ -48,9 +48,10 @@ export default function Home() {
           {h.times.map((x) => (
             <div key={x.label}>
               <div className="label">{x.label}</div>
-              <div className="value">{x.value}</div>
+              <div className="value">{x.value} <span className="tz">{x.tz}</span></div>
             </div>
           ))}
+          <p className="times-note">{h.timesNote}</p>
         </div>
       </section>
 
