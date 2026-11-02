@@ -5,7 +5,7 @@
 
 // Coordonnées communes aux deux langues
 export const CHURCH = {
-  phones: ['+229 01 61 04 09 09', '+229 97 68 84 06', '+229 68 31 21 79', '+229 97 57 71 02'],
+  phones: ['+229 01 61 04 09 09', '+229 01 97 68 84 06', '+229 01 68 31 21 79', '+229 01 97 57 71 02'],
   email: 'turningpointcotonou@gmail.com',
   lomePhone: '[+228 …]',
   links: {
