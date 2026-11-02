@@ -5,7 +5,7 @@
 
 // Coordonnées communes aux deux langues
 export const CHURCH = {
-  phones: ['01 61 04 09 09', '+229 68 31 21 79', '+229 97 57 71 02', '+229 97 68 84 06'],
+  phones: ['+229 01 61 04 09 09', '+229 97 68 84 06', '+229 68 31 21 79', '+229 97 57 71 02'],
   email: 'turningpointcotonou@gmail.com',
   lomePhone: '[+228 …]',
   links: {
@@ -56,7 +56,7 @@ export const CONTENT = {
       eventCta: 'En savoir plus',
       sitesKicker: 'Nos sites', sitesTitle: 'Deux villes, une même famille', sitesLink: 'Itinéraire & horaires →',
       sites: [
-        { photo: '[Photo : auditorium de Cotonou]', country: 'BÉNIN', city: 'Cotonou', addr: 'Auditorium International TPCI — à 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie. Repère : pharmacie Ciné Concorde.', time: 'Dimanche · 8 h 00' },
+        { photo: '[Photo : auditorium de Cotonou]', country: 'BÉNIN', city: 'Cotonou', addr: 'Auditorium International TPCI — Quartier Irédé, Akpakpa. À 300 m de la pharmacie Ciné Concorde, sur la nouvelle voie de Tanto.', time: 'Dimanche · 8 h 00' },
         { photo: '[Photo : site de Lomé]', country: 'TOGO', city: 'Lomé', addr: '[Adresse du site de Lomé et repère pour le trouver.]', time: 'Dimanche · [HEURE]' },
       ],
       pastorsKicker: 'Nos pasteurs', pastorsTitle: 'Pasteur Silas Okechukwu & [Nom de son épouse]', pastorsRole: 'Pasteur Principal & Convocateur',
@@ -96,7 +96,7 @@ export const CONTENT = {
       maps: 'Ouvrir dans Google Maps', mapPh: '[Carte Google Maps intégrée]',
       labels: { address: 'ADRESSE', services: 'CULTES', pastor: 'PASTEUR', phone: 'TÉLÉPHONE', email: 'EMAIL', facebook: 'FACEBOOK' },
       cotonou: { id: 'cotonou', country: 'BÉNIN', city: 'Cotonou', venue: 'Auditorium International TPCI', photo: '[Photo : façade de l’auditorium]',
-        address: 'À 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie', landmark: 'Repère : pharmacie Ciné Concorde',
+        address: 'Quartier Irédé, Akpakpa – Cotonou', landmark: 'À 300 m de la pharmacie Ciné Concorde, sur la nouvelle voie de Tanto',
         sunday: 'Dimanche · 8 h 00', midweek: 'Mardi et jeudi · 18 h 30', pastor: 'Pasteur Silas Okechukwu', facebookText: 'facebook.com/turningpointcotonou' },
       lome: { id: 'lome', country: 'TOGO', city: 'Lomé', venue: '[Nom du lieu de culte]', photo: '[Photo : site de Lomé]',
         address: '[Quartier, rue et repère]', landmark: '', sunday: 'Dimanche · [HEURE]', midweek: '[Culte de semaine : jour et heure]',
@@ -116,7 +116,7 @@ export const CONTENT = {
       formKicker: 'Carte des invités', formTitle: 'Vous êtes spécial(e) pour nous',
       name: 'NOM', phone: 'TÉLÉPHONE', email: 'EMAIL', site: 'SITE', address: 'ADRESSE', prayer: 'DEMANDE DE PRIÈRE', optional: '(facultative)', send: 'Envoyer',
       sent: 'Merci ! Votre message va s’ouvrir dans votre application email.',
-      cotonouAddr: 'À 300 m du Ciné Concorde, en direction de Tanto, sur la nouvelle voie', landmark: 'Repère : pharmacie Ciné Concorde',
+      cotonouAddr: 'Quartier Irédé, Akpakpa – Cotonou', landmark: 'À 300 m de la pharmacie Ciné Concorde, sur la nouvelle voie de Tanto',
       lomeAddr: '[Adresse du site de Lomé]', lomeFb: 'Page Facebook du site de Lomé', social: 'RÉSEAUX SOCIAUX',
       values: 'VOUS ÊTES PRÉCIEUX ◆ VOUS ÊTES AIMÉ ◆ VOUS COMPTEZ',
       mailSubject: 'Carte des invités — site web',
@@ -154,7 +154,7 @@ export const CONTENT = {
       eventCta: 'Learn more',
       sitesKicker: 'Our locations', sitesTitle: 'Two cities, one family', sitesLink: 'Directions & times →',
       sites: [
-        { photo: '[Photo: Cotonou auditorium]', country: 'BENIN', city: 'Cotonou', addr: 'TPCI International Auditorium — 300m from Ciné Concorde towards Tanto, on the New Road. Landmark: Ciné Concorde pharmacy.', time: 'Sunday · 8:00 AM' },
+        { photo: '[Photo: Cotonou auditorium]', country: 'BENIN', city: 'Cotonou', addr: 'TPCI International Auditorium — Irede Quarters, Akpakpa. 300 m from Pharmacy Ciné Concorde, on the new road to Tanto.', time: 'Sunday · 8:00 AM' },
         { photo: '[Photo: Lomé location]', country: 'TOGO', city: 'Lomé', addr: '[Address of the Lomé location and a landmark to find it.]', time: 'Sunday · [TIME]' },
       ],
       pastorsKicker: 'Our pastors', pastorsTitle: 'Pastor Silas Okechukwu & [His wife’s name]', pastorsRole: 'Lead Pastor & Convener',
@@ -194,7 +194,7 @@ export const CONTENT = {
       maps: 'Open in Google Maps', mapPh: '[Embedded Google Map]',
       labels: { address: 'ADDRESS', services: 'SERVICES', pastor: 'PASTOR', phone: 'PHONE', email: 'EMAIL', facebook: 'FACEBOOK' },
       cotonou: { id: 'cotonou', country: 'BENIN', city: 'Cotonou', venue: 'TPCI International Auditorium', photo: '[Photo: auditorium front]',
-        address: '300m from Ciné Concorde towards Tanto, on the New Road', landmark: 'Landmark: Ciné Concorde pharmacy',
+        address: 'Irede Quarters, Akpakpa – Cotonou', landmark: '300 m from Pharmacy Ciné Concorde, on the new road to Tanto',
         sunday: 'Sunday · 8:00 AM', midweek: 'Tuesday and Thursday · 6:30 PM', pastor: 'Pastor Silas Okechukwu', facebookText: 'facebook.com/turningpointcotonou' },
       lome: { id: 'lome', country: 'TOGO', city: 'Lomé', venue: '[Name of the venue]', photo: '[Photo: Lomé location]',
         address: '[Area, street and landmark]', landmark: '', sunday: 'Sunday · [TIME]', midweek: '[Midweek service: day and time]',
@@ -214,7 +214,7 @@ export const CONTENT = {
       formKicker: 'Guest card', formTitle: 'You are special to us',
       name: 'NAME', phone: 'PHONE', email: 'EMAIL', site: 'LOCATION', address: 'ADDRESS', prayer: 'PRAYER REQUEST', optional: '(optional)', send: 'Send',
       sent: 'Thank you! Your message will open in your email app.',
-      cotonouAddr: '300m from Ciné Concorde towards Tanto, on the New Road', landmark: 'Landmark: Ciné Concorde pharmacy',
+      cotonouAddr: 'Irede Quarters, Akpakpa – Cotonou', landmark: '300 m from Pharmacy Ciné Concorde, on the new road to Tanto',
       lomeAddr: '[Lomé location address]', lomeFb: 'Lomé location Facebook page', social: 'SOCIAL MEDIA',
       values: 'YOU ARE VALUED ◆ YOU ARE LOVED ◆ YOU MATTER',
       mailSubject: 'Guest card — website',
