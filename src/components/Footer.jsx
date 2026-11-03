@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <p className="h">{t.ui.footerNav.toUpperCase()}</p>
             <div className="footer-links">
-              {['about', 'locations', 'services', 'gallery', 'documents', 'contact'].map((k) => (
+              {['about', 'locations', 'services', 'gallery', 'documents', 'contact', 'brand'].map((k) => (
                 <a key={k} href={PATHS[k]}>{t.nav[k]}</a>
               ))}
             </div>

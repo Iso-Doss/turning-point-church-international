@@ -7,6 +7,7 @@ export const PATHS = {
   gallery: '#/galerie',
   documents: '#/documents',
   contact: '#/contact',
+  brand: '#/charte',
 };
 
 export function routeFromHash() {

@@ -12,8 +12,9 @@ import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Documents from './pages/Documents.jsx';
+import Brand from './pages/Brand.jsx';
 
-const PAGES = { home: Home, about: About, locations: Locations, services: Services, gallery: Gallery, documents: Documents, contact: Contact };
+const PAGES = { home: Home, about: About, locations: Locations, services: Services, gallery: Gallery, documents: Documents, contact: Contact, brand: Brand };
 
 export default function App() {
   const [route, setRoute] = useState(routeFromHash);

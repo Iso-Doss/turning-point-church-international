@@ -65,7 +65,7 @@ export const CHURCH = {
 
 export const CONTENT = {
   fr: {
-    nav: { home: 'Accueil', about: 'L’Église', locations: 'Nos sites', services: 'Cultes', gallery: 'Galerie', documents: 'Documents', contact: 'Contact' },
+    nav: { home: 'Accueil', about: 'L’Église', locations: 'Nos sites', services: 'Cultes', gallery: 'Galerie', documents: 'Documents', contact: 'Contact', brand: 'Charte graphique' },
     ui: {
       navLabel: 'Navigation principale', langLabel: 'Langue', themeToDark: 'Passer en mode sombre', themeToLight: 'Passer en mode clair',
       menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu', visit: 'Nous rendre visite', toTop: 'Retour en haut de la page',
@@ -201,7 +201,7 @@ export const CONTENT = {
   },
 
   en: {
-    nav: { home: 'Home', about: 'About', locations: 'Locations', services: 'Services', gallery: 'Gallery', documents: 'Documents', contact: 'Contact' },
+    nav: { home: 'Home', about: 'About', locations: 'Locations', services: 'Services', gallery: 'Gallery', documents: 'Documents', contact: 'Contact', brand: 'Brand guidelines' },
     ui: {
       navLabel: 'Main navigation', langLabel: 'Language', themeToDark: 'Switch to dark mode', themeToLight: 'Switch to light mode',
       menuOpen: 'Open the menu', menuClose: 'Close the menu', visit: 'Plan a visit', toTop: 'Back to top',
