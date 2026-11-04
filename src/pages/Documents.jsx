@@ -53,9 +53,10 @@ export default function Documents() {
                     </div>
                     <h3>{info.title}</h3>
                     <p className="meta">{info.desc}</p>
-                    <p className="doc-meta">PDF · {doc.format} · {size(doc.kb)}</p>
+                    <p className="doc-meta">PDF{doc.word ? ' + WORD' : ''} · {doc.format} · {size(doc.kb)}</p>
                     <div className="doc-actions">
                       <a className="btn" href={doc.file} download><DownloadIcon /> {d.download}</a>
+                      {doc.word && <a className="btn btn-outline" href={doc.word} download><DownloadIcon /> {d.word}</a>}
                       <a className="btn btn-outline" href={doc.file} target="_blank" rel="noreferrer"><OpenIcon /> {d.view}</a>
                     </div>
                   </div>

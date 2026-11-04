@@ -394,7 +394,7 @@ html[data-theme="dark"] .card:hover { box-shadow: 0 18px 40px rgba(0,0,0,.5); }
 /* ---------- Documents ---------- */
 .docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
 .doc .doc-preview { display: flex; justify-content: center; align-items: center; padding: 22px; background: var(--alt); border-bottom: 1px solid var(--ln); height: 300px; overflow: hidden; }
-.doc .doc-preview img { max-height: 100%; width: auto; box-shadow: 0 8px 22px rgba(0,0,0,.16); transition: transform .5s var(--ease), box-shadow .5s ease; }
+.doc .doc-preview img { max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; box-shadow: 0 8px 22px rgba(0,0,0,.16); transition: transform .5s var(--ease), box-shadow .5s ease; }
 .doc:hover .doc-preview img { transform: translateY(-4px) rotate(-1deg); box-shadow: 0 16px 34px rgba(0,0,0,.24); }
 .doc-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag { font-family: var(--display); font-size: 10.5px; letter-spacing: .16em; padding: 4px 8px 3px; border: 1px solid var(--gl); color: var(--gt); }
