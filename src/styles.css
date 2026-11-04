@@ -226,8 +226,6 @@ h1, h2, h3, p { margin: 0; }
 .header { transition: box-shadow .3s ease, background-color .3s ease; }
 html[data-scrolled] .header { box-shadow: 0 6px 24px rgba(0,0,0,.08); background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 html[data-theme="dark"][data-scrolled] .header { box-shadow: 0 6px 24px rgba(0,0,0,.45); }
-.brand img { transition: transform .5s var(--ease); }
-.brand:hover img { transform: rotate(-8deg) scale(1.05); }
 
 /* Changement de page : fondu léger */
 .page-enter { animation: pageIn .45s var(--ease) both; }
@@ -531,16 +529,23 @@ html[data-theme="dark"] .card:hover { box-shadow: 0 18px 40px rgba(0,0,0,.5); }
 @media (max-width: 480px) { .swatch .chip { height: 64px; } .sw-body { padding: 10px 12px 12px; } .sw-use { font-size: 15px; } .sw-hex { font-size: 11px; } }
 
 /* ---------- Bande défilante (nom de l'église) ---------- */
-:root { --tk: 44px; }
+:root { --tk: 56px; }
 .ticker { position: sticky; top: 0; z-index: 41; height: var(--tk); display: flex; align-items: center;
   background: var(--band); color: var(--hg); overflow: hidden; border-bottom: 1px solid var(--hln); }
 .ticker-track { display: flex; width: max-content; animation: ticker 60s linear infinite; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 .ticker-run { display: flex; flex: none; }
 .ticker span { display: inline-flex; align-items: center; white-space: nowrap; font-family: var(--display);
-  font-size: 13.5px; letter-spacing: .28em; line-height: 1; }
+  font-size: 15px; letter-spacing: .28em; line-height: 1; }
 .ticker .tk-name { color: var(--hink); font-weight: 600; }
 .ticker .tk-city { color: var(--hg); }
-.ticker i { font-style: normal; color: var(--hg); font-size: 11px; margin: 0 28px; opacity: .8; }
+.ticker i { font-style: normal; color: var(--hg); font-size: 12px; margin: 0 32px; opacity: .8; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (max-width: 640px) { :root { --tk: 38px; } .ticker span { font-size: 12px; letter-spacing: .22em; } .ticker i { margin: 0 20px; } }
+@media (max-width: 640px) { :root { --tk: 46px; } .ticker span { font-size: 13px; letter-spacing: .22em; } .ticker i { margin: 0 20px; } }
+
+/* Logo de l'en-tête : rotation 3D continue autour de l'axe vertical */
+.brand { perspective: 600px; }
+.brand img { animation: logo-3d 7s linear infinite; transform-style: preserve-3d; will-change: transform;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.18)); }
+.brand:hover img { animation-play-state: paused; }
+@keyframes logo-3d { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
