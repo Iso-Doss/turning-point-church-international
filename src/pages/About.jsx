@@ -22,7 +22,7 @@ export default function About() {
             <p className="kicker">{a.storyKicker}</p>
             <h2 className="title">{a.storyTitle}</h2>
             <p style={{ marginTop: 22 }}>{a.storyText}</p>
-            <p className="muted" style={{ marginTop: 18 }}>{a.storyPh}</p>
+            <p style={{ marginTop: 18 }}>{a.storyPh}</p>
           </div>
           <div className="placeholder" style={{ height: 'clamp(280px, 34vw, 440px)' }}>{a.storyPhoto.toUpperCase()}</div>
         </div>
@@ -62,6 +62,7 @@ export default function About() {
               </article>
             ))}
           </div>
+          <p className="center" style={{ marginTop: 48 }}><a className="btn btn-outline" href={PATHS.pastor}>{a.pastorsMore}</a></p>
         </div>
       </section>
 

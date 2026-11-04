@@ -14,8 +14,9 @@ import Contact from './pages/Contact.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Documents from './pages/Documents.jsx';
 import Brand from './pages/Brand.jsx';
+import Pastor from './pages/Pastor.jsx';
 
-const PAGES = { home: Home, about: About, locations: Locations, services: Services, gallery: Gallery, documents: Documents, contact: Contact, brand: Brand };
+const PAGES = { home: Home, about: About, locations: Locations, services: Services, gallery: Gallery, documents: Documents, contact: Contact, brand: Brand, pastor: Pastor };
 
 export default function App() {
   const [route, setRoute] = useState(routeFromHash);

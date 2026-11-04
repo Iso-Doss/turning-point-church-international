@@ -8,6 +8,7 @@ export const PATHS = {
   documents: '#/documents',
   contact: '#/contact',
   brand: '#/charte',
+  pastor: '#/pasteur',
 };
 
 export function routeFromHash() {

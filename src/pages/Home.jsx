@@ -130,7 +130,7 @@ export default function Home() {
             <p style={{ marginTop: 26, fontFamily: 'var(--display)', fontSize: 20, color: 'var(--acc)' }}>
               « Where Leaders Are Made and Nations Are Turned »
             </p>
-            <a className="link" href={PATHS.about}>{h.pastorsLink.toUpperCase()}</a>
+            <a className="link" href={PATHS.pastor}>{h.pastorsLink.toUpperCase()}</a>
           </div>
         </div>
       </section>
