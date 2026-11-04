@@ -54,8 +54,8 @@ export const CHURCH = {
   documents: [
     { id: 'theme-mardi-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 489, file: 'documents/flyer-theme-de-la-honte-a-la-gloire-fr.pdf', preview: 'documents/apercus/flyer-theme-de-la-honte-a-la-gloire-fr.jpg' },
     { id: 'theme-mardi-en', category: 'flyers', lang: 'en', format: 'A5', kb: 469, file: 'documents/flyer-theme-from-shame-to-fame-en.pdf', preview: 'documents/apercus/flyer-theme-from-shame-to-fame-en.jpg' },
-    { id: 'lettre-fr', category: 'invitations', lang: 'fr', format: 'A4', kb: 1447, file: 'documents/lettre-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/lettre-invitation-action-de-grace-2026-fr.jpg' },
-    { id: 'lettre-en', category: 'invitations', lang: 'en', format: 'A4', kb: 1432, file: 'documents/invitation-letter-thanksgiving-2026-en.pdf', preview: 'documents/apercus/invitation-letter-thanksgiving-2026-en.jpg' },
+    { id: 'lettre-fr', category: 'invitations', lang: 'fr', format: 'A4', kb: 1741, file: 'documents/lettre-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/lettre-invitation-action-de-grace-2026-fr.jpg' },
+    { id: 'lettre-en', category: 'invitations', lang: 'en', format: 'A4', kb: 1726, file: 'documents/invitation-letter-thanksgiving-2026-en.pdf', preview: 'documents/apercus/invitation-letter-thanksgiving-2026-en.jpg' },
     { id: 'invit-v-fr', category: 'invitations', lang: 'fr', format: 'A5', kb: 838, file: 'documents/carte-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/carte-invitation-action-de-grace-2026-fr.jpg' },
     { id: 'invit-v-en', category: 'invitations', lang: 'en', format: 'A5', kb: 833, file: 'documents/invitation-card-thanksgiving-2026-en.pdf', preview: 'documents/apercus/invitation-card-thanksgiving-2026-en.jpg' },
     { id: 'invit-h-fr', category: 'invitations', lang: 'fr', format: 'A5', kb: 867, file: 'documents/carte-invitation-horizontale-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/carte-invitation-horizontale-action-de-grace-2026-fr.jpg' },
