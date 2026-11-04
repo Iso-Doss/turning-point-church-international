@@ -529,3 +529,16 @@ html[data-theme="dark"] .card:hover { box-shadow: 0 18px 40px rgba(0,0,0,.5); }
   .brand-examples { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) { .swatch .chip { height: 64px; } .sw-body { padding: 10px 12px 12px; } .sw-use { font-size: 15px; } .sw-hex { font-size: 11px; } }
+
+/* ---------- Bande défilante (nom de l'église) ---------- */
+.ticker { background: var(--band); color: var(--hg); overflow: hidden; border-bottom: 1px solid var(--hln); }
+.ticker-track { display: flex; width: max-content; animation: ticker 60s linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+.ticker-run { display: flex; flex: none; }
+.ticker span { display: inline-flex; align-items: center; white-space: nowrap; font-family: var(--display);
+  font-size: 12px; letter-spacing: .28em; line-height: 1; padding: 10px 0; }
+.ticker .tk-name { color: var(--hink); font-weight: 600; }
+.ticker .tk-city { color: var(--hg); }
+.ticker i { font-style: normal; color: var(--hg); font-size: 10px; margin: 0 26px; opacity: .8; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 640px) { .ticker span { font-size: 11px; letter-spacing: .22em; padding: 9px 0; } .ticker i { margin: 0 18px; } }

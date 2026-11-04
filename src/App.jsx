@@ -3,6 +3,7 @@ import { PrefsProvider } from './prefs.jsx';
 import { routeFromHash } from './routes.js';
 import { setupParallax, setupReveal, setupScrollFx } from './effects.js';
 import Header from './components/Header.jsx';
+import Ticker from './components/Ticker.jsx';
 import Footer from './components/Footer.jsx';
 import ScrollTop from './components/ScrollTop.jsx';
 import Home from './pages/Home.jsx';
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <PrefsProvider>
       <div className="progress" aria-hidden="true" />
+      <Ticker />
       <Header route={route} />
       <main key={route} className="page-enter">
         <Page />
