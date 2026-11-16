@@ -582,6 +582,32 @@ html[data-theme="dark"] .card:hover { box-shadow: 0 18px 40px rgba(0,0,0,.5); }
    Césure automatique (la langue de la page est fr ou en) pour éviter les grands blancs.
    Les zones centrées (en-têtes de page, citations, appels) gardent leur alignement. */
 main p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 3 3; }
-main :is(.center, .page-head, .pastor-verse, .pastor-close, .placeholder, .player) p,
+main :is(.center, .page-head, .pastor-verse, .pastor-close, .placeholder, .player, .story-verse, .story-voice, .story-mandate) p,
 main p.kicker { text-align: inherit; }
 main p.center { text-align: center; }
+
+/* ---------- L'Église : origine et frise (2017 · 2018 · 2024) ---------- */
+.story-verse { margin: 48px auto 0; max-width: 900px; text-align: center; border-top: 1px solid var(--gl); border-bottom: 1px solid var(--gl); padding: 32px 8px; }
+.story-verse blockquote { margin: 0; font-style: italic; font-size: clamp(18px, 2vw, 22px); line-height: 1.55; }
+.story-verse figcaption { margin-top: 16px; }
+.story-voice { text-align: center; margin-top: 48px; }
+.story-voice .v1 { font-family: var(--display); color: var(--acc); font-size: clamp(24px, 3vw, 36px); line-height: 1.25; }
+.story-voice .v2 { font-style: italic; color: var(--mut); font-size: clamp(18px, 2vw, 22px); margin-top: 10px; }
+.story-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+.story-steps::before { content: ""; position: absolute; left: 0; right: 0; top: 9px; height: 1px; background: var(--gl); }
+.story-steps li { position: relative; padding-top: 36px; }
+.story-steps li::before { content: ""; position: absolute; left: 0; top: 4px; width: 11px; height: 11px; background: var(--gl); transform: rotate(45deg); box-shadow: 0 0 0 5px var(--bg); }
+.story-steps .date { font-family: var(--display); font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--gt); }
+.story-steps h3 { font-family: var(--display); font-weight: 400; color: var(--acc); font-size: clamp(22px, 2.2vw, 26px); margin: 8px 0 0; line-height: 1.25; }
+.story-steps li > p:last-child { margin-top: 14px; }
+.story-mandate { margin: 64px auto 0; max-width: 820px; text-align: center; }
+.story-mandate p { font-family: var(--display); font-size: clamp(20px, 2.4vw, 28px); line-height: 1.35; color: var(--acc); }
+.story-mandate p + p { margin-top: 8px; }
+main p.story-birth { max-width: 760px; margin: 32px auto 0; text-align: center; font-size: clamp(18px, 2vw, 21px); }
+main p.story-faithful { text-align: center; margin-top: 22px; font-style: italic; color: var(--gt); font-size: 20px; }
+@media (max-width: 860px) {
+  .story-steps { grid-template-columns: 1fr; gap: 32px; }
+  .story-steps::before { left: 5px; right: auto; top: 0; bottom: 0; width: 1px; height: auto; }
+  .story-steps li { padding: 0 0 0 34px; }
+  .story-steps li::before { top: 6px; }
+}

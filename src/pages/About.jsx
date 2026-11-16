@@ -1,10 +1,12 @@
 import { usePrefs } from '../prefs.jsx';
 import { PATHS } from '../routes.js';
 import { CHURCH } from '../content.js';
+import { STORY } from '../story.js';
 
 export default function About() {
-  const { t } = usePrefs();
+  const { t, lang } = usePrefs();
   const a = t.about;
+  const o = STORY[lang];
 
   return (
     <>
@@ -25,6 +27,45 @@ export default function About() {
             <p style={{ marginTop: 18 }}>{a.storyPh}</p>
           </div>
           <div className="placeholder" style={{ height: 'clamp(280px, 34vw, 440px)' }}>{a.storyPhoto.toUpperCase()}</div>
+        </div>
+      </section>
+
+      {/* Qui sommes-nous et que croyons-nous ? */}
+      <section className="section bg-alt">
+        <div className="container">
+          <div className="pastor-text">
+            <p className="kicker">{o.kicker}</p>
+            <h2 className="title">{o.title}</h2>
+            <div className="rule" />
+            <p>{o.intro}</p>
+          </div>
+          <figure className="story-verse">
+            <blockquote>{o.verse}</blockquote>
+            <figcaption className="kicker">{o.verseRef}</figcaption>
+          </figure>
+          <div className="story-voice">
+            <p className="v1">{o.voice[0]}</p>
+            <p className="v2">{o.voice[1]}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <ol className="story-steps">
+            {o.steps.map((s) => (
+              <li key={s.date}>
+                <p className="date">{s.date}</p>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="story-mandate">
+            {o.mandate.map((m) => <p key={m}>{m}</p>)}
+          </div>
+          <p className="story-birth">{o.birth}</p>
+          <p className="story-faithful">{o.faithful}</p>
         </div>
       </section>
 
