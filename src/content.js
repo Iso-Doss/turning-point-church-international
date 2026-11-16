@@ -40,18 +40,27 @@ export const CHURCH = {
   ],
 
   // ---------- DOCUMENTS ----------
-  // Prochain culte mis en avant (Accueil + Cultes). Le bloc disparaît tout seul après `until`.
-  // Pour le suivant : changer les dates, l'image et le flyer ici, et les textes dans CONTENT.*.nextService.
-  nextService: {
-    until: '2026-11-03T21:00:00Z',
-    image: { fr: 'evenements/theme-mardi-2026-11-03-fr.jpg', en: 'evenements/theme-mardi-2026-11-03-en.jpg' },
-    flyer: { fr: 'documents/flyer-theme-de-la-honte-a-la-gloire-fr.pdf', en: 'documents/flyer-theme-from-shame-to-fame-en.pdf' },
-    calendar: 'evenements/culte-mardi-2026-11-03.ics',
-  },
+  // Cultes de la semaine mis en avant (Accueil + Cultes) : le premier non passé s'affiche en grand,
+  // les suivants sous « Aussi cette semaine ». Chaque culte disparaît tout seul après `until`.
+  // Pour la semaine suivante : remplacer cette liste, et les textes dans CONTENT.*.nextService.items.
+  nextServices: [
+    { id: 'mardi', until: '2026-11-17T20:00:00Z', image: { fr: 'evenements/culte-mardi-2026-11-17-fr.jpg', en: 'evenements/culte-mardi-2026-11-17-en.jpg' },
+      flyer: { fr: 'documents/flyer-culte-mardi-2026-11-17-fr.pdf', en: 'documents/flyer-culte-mardi-2026-11-17-en.pdf' }, calendar: 'evenements/culte-mardi-2026-11-17.ics' },
+    { id: 'jeudi', until: '2026-11-19T20:00:00Z', image: { fr: 'evenements/culte-communion-2026-11-19-fr.jpg', en: 'evenements/culte-communion-2026-11-19-en.jpg' },
+      flyer: { fr: 'documents/flyer-culte-communion-2026-11-19-fr.pdf', en: 'documents/flyer-culte-communion-2026-11-19-en.pdf' }, calendar: 'evenements/culte-communion-2026-11-19.ics' },
+    { id: 'dimanche', until: '2026-11-22T11:00:00Z', image: { fr: 'evenements/culte-dimanche-2026-11-22-fr.jpg', en: 'evenements/culte-dimanche-2026-11-22-en.jpg' },
+      flyer: { fr: 'documents/flyer-culte-dimanche-2026-11-22-fr.pdf', en: 'documents/flyer-culte-dimanche-2026-11-22-en.pdf' }, calendar: 'evenements/culte-dimanche-2026-11-22.ics' },
+  ],
 
   // Pour ajouter un document : déposer le PDF dans public/documents/ (et son aperçu
   // dans public/documents/apercus/), puis l'ajouter ici et son titre dans CONTENT.
   documents: [
+    { id: 'sem-mardi-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 340, file: 'documents/flyer-culte-mardi-2026-11-17-fr.pdf', preview: 'documents/apercus/flyer-culte-mardi-2026-11-17-fr.jpg' },
+    { id: 'sem-mardi-en', category: 'flyers', lang: 'en', format: 'A5', kb: 344, file: 'documents/flyer-culte-mardi-2026-11-17-en.pdf', preview: 'documents/apercus/flyer-culte-mardi-2026-11-17-en.jpg' },
+    { id: 'sem-jeudi-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 347, file: 'documents/flyer-culte-communion-2026-11-19-fr.pdf', preview: 'documents/apercus/flyer-culte-communion-2026-11-19-fr.jpg' },
+    { id: 'sem-jeudi-en', category: 'flyers', lang: 'en', format: 'A5', kb: 371, file: 'documents/flyer-culte-communion-2026-11-19-en.pdf', preview: 'documents/apercus/flyer-culte-communion-2026-11-19-en.jpg' },
+    { id: 'sem-dimanche-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 355, file: 'documents/flyer-culte-dimanche-2026-11-22-fr.pdf', preview: 'documents/apercus/flyer-culte-dimanche-2026-11-22-fr.jpg' },
+    { id: 'sem-dimanche-en', category: 'flyers', lang: 'en', format: 'A5', kb: 356, file: 'documents/flyer-culte-dimanche-2026-11-22-en.pdf', preview: 'documents/apercus/flyer-culte-dimanche-2026-11-22-en.jpg' },
     { id: 'theme-mardi-fr', category: 'flyers', lang: 'fr', format: 'A5', kb: 489, file: 'documents/flyer-theme-de-la-honte-a-la-gloire-fr.pdf', preview: 'documents/apercus/flyer-theme-de-la-honte-a-la-gloire-fr.jpg' },
     { id: 'theme-mardi-en', category: 'flyers', lang: 'en', format: 'A5', kb: 469, file: 'documents/flyer-theme-from-shame-to-fame-en.pdf', preview: 'documents/apercus/flyer-theme-from-shame-to-fame-en.jpg' },
     { id: 'lettre-fr', category: 'invitations', lang: 'fr', format: 'A4', kb: 1741, file: 'documents/lettre-invitation-action-de-grace-2026-fr.pdf', preview: 'documents/apercus/lettre-invitation-action-de-grace-2026-fr.jpg' },
@@ -168,16 +177,31 @@ export const CONTENT = {
       followText: 'Retrouvez plus de photos sur notre page Facebook.', followButton: 'Voir sur Facebook',
     },
     nextService: {
-      kicker: 'Prochain culte', label: 'Culte de mardi · Thème',
-      top: 'De la honte', bottom: 'à la gloire',
-      verse: '« Au lieu de votre opprobre, vous aurez une portion double. »', ref: 'Ésaïe 61 : 7',
-      facts: [
-        { label: 'DATE', value: 'Mardi 3 novembre 2026' },
-        { label: 'HEURE', value: '18 h 30 (GMT+1)' },
-        { label: 'LIEU', value: 'Auditorium International TPCI, Quartier Irédé, Akpakpa – Cotonou' },
-      ],
-      invite: 'Venez nombreux et invitez un ami !',
-      flyer: 'Télécharger le flyer', calendar: 'Ajouter à mon agenda', alt: 'Flyer du culte : De la honte à la gloire',
+      kicker: 'Prochain culte', also: 'Aussi cette semaine',
+      flyer: 'Télécharger le flyer', calendar: 'Ajouter à mon agenda',
+      items: {
+        mardi: {
+          label: 'Culte de mardi · Thème', top: 'Ce verdict', bottom: 'ne tiendra pas',
+          verse: '« Toute arme forgée contre toi sera sans effet ; et toute langue qui s’élèvera en justice contre toi, tu la condamneras. »', ref: 'Ésaïe 54 : 17',
+          facts: [{ label: 'DATE', value: 'Mardi 17 novembre 2026' }, { label: 'HEURE', value: '18 h 30 (GMT+1)' }, { label: 'LIEU', value: 'Auditorium International TPCI, Quartier Irédé, Akpakpa – Cotonou' }],
+          invite: 'Alors que nous terminons l’année, il ne tiendra pas ! Venez nombreux et invitez un ami.',
+          short: 'Mardi 17 nov. · 18 h 30', alt: 'Flyer du culte : Ce verdict ne tiendra pas',
+        },
+        jeudi: {
+          label: 'Culte de Sainte Communion · Thème', top: 'La fondation', bottom: 'est brisée',
+          verse: '« Toute plante que n’a pas plantée mon Père céleste sera déracinée. »', ref: 'Matthieu 15 : 13',
+          facts: [{ label: 'DATE', value: 'Jeudi 19 novembre 2026' }, { label: 'HEURE', value: '18 h 30 (GMT+1)' }, { label: 'LIEU', value: 'Auditorium International TPCI, Quartier Irédé, Akpakpa – Cotonou' }],
+          invite: 'Toute fondation diabolique est brisée. Venez communier à la table du Seigneur.',
+          short: 'Jeudi 19 nov. · 18 h 30', alt: 'Flyer du culte : La fondation est brisée',
+        },
+        dimanche: {
+          label: 'Culte du dimanche · Thème', top: 'L’aspersion', bottom: 'du sang',
+          verse: '« …de Jésus qui est le médiateur de la nouvelle alliance, et du sang de l’aspersion qui parle mieux que celui d’Abel. »', ref: 'Hébreux 12 : 24',
+          facts: [{ label: 'DATE', value: 'Dimanche 22 novembre 2026' }, { label: 'HEURE', value: '8 h 00 (GMT+1)' }, { label: 'LIEU', value: 'Auditorium International TPCI, Quartier Irédé, Akpakpa – Cotonou' }],
+          invite: 'Amenez-les sous l’alliance : venez nombreux et invitez un ami !',
+          short: 'Dimanche 22 nov. · 8 h 00', alt: 'Flyer du culte : L’aspersion du sang',
+        },
+      },
     },
     documents: {
       kicker: 'Documents', title: 'Documents à télécharger',
@@ -186,6 +210,12 @@ export const CONTENT = {
       download: 'Télécharger', word: 'Word', view: 'Ouvrir', langs: { fr: 'Français', en: 'Anglais' }, sizeUnit: 'Ko',
       printTip: 'Conseil d’impression : format réel (100 %), papier ivoire ou blanc de 120 g ou plus.',
       items: {
+        'sem-mardi-fr': { title: 'Flyer — Ce verdict ne tiendra pas', desc: 'Culte de mardi 17 novembre 2026, 18 h 30 (Ésaïe 54 : 17).' },
+        'sem-mardi-en': { title: 'Flyer — This Verdict Shall Not Stand', desc: 'Version anglaise du flyer de mardi 17 novembre.' },
+        'sem-jeudi-fr': { title: 'Flyer — La fondation est brisée', desc: 'Culte de Sainte Communion, jeudi 19 novembre 2026, 18 h 30 (Matthieu 15 : 13).' },
+        'sem-jeudi-en': { title: 'Flyer — The Foundation Is Broken', desc: 'Version anglaise du flyer de la Sainte Communion.' },
+        'sem-dimanche-fr': { title: 'Flyer — L’aspersion du sang', desc: 'Culte du dimanche 22 novembre 2026, 8 h 00 (Hébreux 12 : 24).' },
+        'sem-dimanche-en': { title: 'Flyer — The Sprinkling of the Blood', desc: 'Version anglaise du flyer du dimanche 22 novembre.' },
         'lettre-fr': { title: 'Lettre d’invitation — Festival de Gratitude 2026', desc: 'Lettre privée d’invitation d’honneur au culte d’action de grâce du 6 décembre 2026.' },
         'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Version anglaise de la lettre d’invitation d’honneur.' },
         'invit-v-fr': { title: 'Carte d’invitation — Festival de Gratitude (verticale)', desc: 'Carte d’invité d’honneur recto-verso pour le culte d’action de grâce du 6 décembre 2026.' },
@@ -312,16 +342,31 @@ export const CONTENT = {
       followText: 'Find more photos on our Facebook page.', followButton: 'View on Facebook',
     },
     nextService: {
-      kicker: 'Next service', label: 'Tuesday Service · Theme',
-      top: 'From shame', bottom: 'to fame',
-      verse: '“Instead of your shame you will receive a double portion.”', ref: 'Isaiah 61:7',
-      facts: [
-        { label: 'DATE', value: 'Tuesday, 3rd November 2026' },
-        { label: 'TIME', value: '6:30 PM (GMT+1)' },
-        { label: 'VENUE', value: 'TPCI International Auditorium, Irede Quarters, Akpakpa – Cotonou' },
-      ],
-      invite: 'Come expectant and bring a friend!',
-      flyer: 'Download the flyer', calendar: 'Add to my calendar', alt: 'Service flyer: From Shame to Fame',
+      kicker: 'Next service', also: 'Also this week',
+      flyer: 'Download the flyer', calendar: 'Add to my calendar',
+      items: {
+        mardi: {
+          label: 'Tuesday Service · Theme', top: 'This verdict', bottom: 'shall not stand',
+          verse: '“No weapon that is formed against thee shall prosper; and every tongue that shall rise against thee in judgment thou shalt condemn.”', ref: 'Isaiah 54:17',
+          facts: [{ label: 'DATE', value: 'Tuesday, 17th November 2026' }, { label: 'TIME', value: '6:30 PM (GMT+1)' }, { label: 'VENUE', value: 'TPCI International Auditorium, Irede Quarters, Akpakpa – Cotonou' }],
+          invite: 'As we end the year, it shall not stand! Come expectant and bring a friend.',
+          short: 'Tue 17 Nov · 6:30 PM', alt: 'Service flyer: This Verdict Shall Not Stand',
+        },
+        jeudi: {
+          label: 'Holy Communion Service · Theme', top: 'The foundation', bottom: 'is broken',
+          verse: '“Every plant, which my heavenly Father hath not planted, shall be rooted up.”', ref: 'Matthew 15:13',
+          facts: [{ label: 'DATE', value: 'Thursday, 19th November 2026' }, { label: 'TIME', value: '6:30 PM (GMT+1)' }, { label: 'VENUE', value: 'TPCI International Auditorium, Irede Quarters, Akpakpa – Cotonou' }],
+          invite: 'Every evil foundation is broken. Come and share the Lord’s table.',
+          short: 'Thu 19 Nov · 6:30 PM', alt: 'Service flyer: The Foundation Is Broken',
+        },
+        dimanche: {
+          label: 'Sunday Service · Theme', top: 'The sprinkling', bottom: 'of the blood',
+          verse: '“…to Jesus the mediator of the new covenant, and to the blood of sprinkling, that speaketh better things than that of Abel.”', ref: 'Hebrews 12:24',
+          facts: [{ label: 'DATE', value: 'Sunday, 22nd November 2026' }, { label: 'TIME', value: '8:00 AM (GMT+1)' }, { label: 'VENUE', value: 'TPCI International Auditorium, Irede Quarters, Akpakpa – Cotonou' }],
+          invite: 'Bring them under the covenant: come expectant and bring a friend!',
+          short: 'Sun 22 Nov · 8:00 AM', alt: 'Service flyer: The Sprinkling of the Blood',
+        },
+      },
     },
     documents: {
       kicker: 'Documents', title: 'Downloads',
@@ -330,6 +375,12 @@ export const CONTENT = {
       download: 'Download', word: 'Word', view: 'Open', langs: { fr: 'French', en: 'English' }, sizeUnit: 'KB',
       printTip: 'Printing tip: actual size (100%), ivory or white paper, 120 gsm or heavier.',
       items: {
+        'sem-mardi-fr': { title: 'Flyer — Ce verdict ne tiendra pas', desc: 'French version of the Tuesday 17th November flyer.' },
+        'sem-mardi-en': { title: 'Flyer — This Verdict Shall Not Stand', desc: 'Tuesday Service, 17th November 2026, 6:30 PM (Isaiah 54:17).' },
+        'sem-jeudi-fr': { title: 'Flyer — La fondation est brisée', desc: 'French version of the Holy Communion flyer.' },
+        'sem-jeudi-en': { title: 'Flyer — The Foundation Is Broken', desc: 'Holy Communion Service, Thursday 19th November 2026, 6:30 PM (Matthew 15:13).' },
+        'sem-dimanche-fr': { title: 'Flyer — L’aspersion du sang', desc: 'French version of the Sunday 22nd November flyer.' },
+        'sem-dimanche-en': { title: 'Flyer — The Sprinkling of the Blood', desc: 'Sunday Service, 22nd November 2026, 8:00 AM (Hebrews 12:24).' },
         'lettre-fr': { title: 'Lettre d’invitation — Festival de Gratitude 2026', desc: 'French version of the invitation letter.' },
         'lettre-en': { title: 'Invitation letter — Festival of Gratitude 2026', desc: 'Private letter inviting guests of honour to the Thanksgiving service on 6th December 2026.' },
         'invit-v-fr': { title: 'Carte d’invitation — Festival de Gratitude (verticale)', desc: 'French version of the portrait invitation card.' },

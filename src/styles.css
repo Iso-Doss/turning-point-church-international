@@ -611,3 +611,15 @@ main p.story-faithful { text-align: center; margin-top: 22px; font-style: italic
   .story-steps li { padding: 0 0 0 34px; }
   .story-steps li::before { top: 6px; }
 }
+
+/* « Aussi cette semaine » sous le prochain culte */
+.next-also { flex: 1 1 100%; border-top: 1px solid rgba(217,192,138,.35); padding-top: 28px; }
+.next-also-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 16px; }
+.next-also-item { display: flex; align-items: center; gap: 16px; padding: 12px; text-decoration: none; color: #F6EBDD;
+  border: 1px solid rgba(217,192,138,.3); background: rgba(14,7,7,.28); transition: border-color .3s ease, transform .3s var(--ease); }
+.next-also-item:hover { border-color: #D9C08A; transform: translateY(-3px); }
+.next-also-item img { width: 72px; height: 90px; object-fit: cover; flex: none; border: 1px solid rgba(217,192,138,.4); }
+.next-also-item > span { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.next-also-item .when { font-family: var(--display); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #E7C68E; }
+.next-also-item .what { font-family: var(--display); font-size: 19px; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.next-also-item .lbl { font-style: italic; color: rgba(246,235,221,.7); font-size: 16px; }

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-mardi-2026-11-17@tpci-cotonou
+DTSTAMP:20261116T080000Z
+DTSTART:20261117T173000Z
+DTEND:20261117T193000Z
+SUMMARY:TPCI – Ce verdict ne tiendra pas / This Verdict Shall Not Stand
+DESCRIPTION:Culte de mardi – Tuesday Service. Ésaïe / Isaiah 54:17.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR

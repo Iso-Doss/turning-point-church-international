@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-dimanche-2026-11-22@tpci-cotonou
+DTSTAMP:20261116T080000Z
+DTSTART:20261122T070000Z
+DTEND:20261122T100000Z
+SUMMARY:TPCI – L’aspersion du sang / The Sprinkling of the Blood
+DESCRIPTION:Culte du dimanche – Sunday Service. Hébreux / Hebrews 12:24.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR

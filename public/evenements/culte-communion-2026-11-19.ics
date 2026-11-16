@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-communion-2026-11-19@tpci-cotonou
+DTSTAMP:20261116T080000Z
+DTSTART:20261119T173000Z
+DTEND:20261119T193000Z
+SUMMARY:TPCI – La fondation est brisée / The Foundation Is Broken
+DESCRIPTION:Culte de Sainte Communion – Holy Communion Service. Matthieu / Matthew 15:13.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR
