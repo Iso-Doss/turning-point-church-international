@@ -58,6 +58,12 @@ Puis ouvrir l'adresse affichée (par exemple http://localhost:5173).
 
 Ensuite, chaque modification envoyée sur `main` met le site à jour automatiquement.
 
+### Netlify
+
+Le dépôt est aussi relié au projet Netlify **tpci-international** : https://tpci-international.netlify.app.
+Chaque push sur `main` met donc à jour **les deux** sites (GitHub Pages par Actions, Netlify par sa propre
+compilation, réglée dans `netlify.toml`).
+
 ### Nom de domaine (facultatif)
 
 Pour utiliser une adresse comme `www.tpci-cotonou.org`, ajoutez-la dans **Settings → Pages → Custom domain**
