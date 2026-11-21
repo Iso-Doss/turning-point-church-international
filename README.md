@@ -60,7 +60,7 @@ Ensuite, chaque modification envoyée sur `main` met le site à jour automatique
 
 ### Netlify
 
-Le dépôt est aussi relié au projet Netlify **tpci-international** : https://tpci-international.netlify.app.
+Le dépôt est aussi relié au projet Netlify **tpci-intl** : https://tpci-intl.netlify.app.
 Chaque push sur `main` met donc à jour **les deux** sites (GitHub Pages par Actions, Netlify par sa propre
 compilation, réglée dans `netlify.toml`).
 
