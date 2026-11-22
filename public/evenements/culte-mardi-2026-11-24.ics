@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-mardi-2026-11-24@tpci-cotonou
+DTSTAMP:20261122T140000Z
+DTSTART:20261124T173000Z
+DTEND:20261124T193000Z
+SUMMARY:TPCI – Il y aura assurément une fin / Surely There Will Be an End
+DESCRIPTION:Culte d’enseignement – Teaching Service. Proverbes / Proverbs 23:18.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR

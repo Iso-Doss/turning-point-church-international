@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-dimanche-2026-11-29@tpci-cotonou
+DTSTAMP:20261122T140000Z
+DTSTART:20261129T070000Z
+DTEND:20261129T100000Z
+SUMMARY:TPCI – Remporter la guerre contre la pauvreté / Winning the War Against Poverty
+DESCRIPTION:Culte d’adoration – Worship Service. 2 Corinthiens / 2 Corinthians 8:9.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR

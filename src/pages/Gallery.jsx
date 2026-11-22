@@ -11,7 +11,8 @@ const Chevron = ({ dir }) => (
 );
 
 function Photo({ item, lang, emptyText }) {
-  if (item.src) return <img src={item.src} alt={item.caption[lang]} loading="lazy" />;
+  const src = typeof item.src === 'object' ? item.src?.[lang] : item.src;
+  if (src) return <img src={src} alt={item.caption[lang]} loading="lazy" />;
   return (
     <div className="photo-empty">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

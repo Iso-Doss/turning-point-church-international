@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Turning Point Church International//Cotonou//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:culte-communion-2026-11-26@tpci-cotonou
+DTSTAMP:20261122T140000Z
+DTSTART:20261126T173000Z
+DTEND:20261126T193000Z
+SUMMARY:TPCI – Sainte Cène : la détresse ne surgira pas une seconde fois / Holy Communion: Affliction Shall Not Rise the Second Time
+DESCRIPTION:Sainte Cène – Holy Communion. Nahum 1:9.
+LOCATION:Auditorium International TPCI\, Quartier Irédé\, Akpakpa\, Cotonou\, Bénin
+END:VEVENT
+END:VCALENDAR
